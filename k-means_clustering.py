@@ -235,19 +235,16 @@ class KMeans:
 
         return self.avg_means_squared_error(centroids, cluster_memberships), centroids, cluster_memberships
 
-    def save_superimposed_clusters(self):
-        for cluster_index in range(len(self.testing_clusters)):
-            self.save_superimposed_cluster(cluster_index)
+    def save_centroids(self):
+        for cluster_index in range(len(self.k)):
+            self.save_centroid(cluster_index)
 
-    def save_superimposed_cluster(self, index):
+    def save_centroid(self, index):
         # superimpose the cluster members
-        superimposed_cluster = sum(self.testing_clusters[index])
-        # strip off the class information
-        superimposed_cluster = superimposed_cluster[:self.class_index]
-        superimposed_cluster.shape = (8, 8)
-        out_file = open("superimposed_data/superimposed_" + str(index), 'w')
-        #np.savetxt(out_file, superimposed_cluster, delimiter=',')
-        np.save(out_file, superimposed_cluster)
+        centroid = self.centroids[k]
+        centroid.shape = (8, 8)
+        out_file = open("centroids/k:" + str(index) + "_label:" + self.labels[index], 'w')
+        np.save(out_file, centroid)
         out_file.close
 
 
@@ -277,7 +274,7 @@ if __name__ == "__main__":
     number_of_classes = 10
 
     kMeans = KMeans(training_data, testing_data, class_index, number_of_classes, k, cluster_attempts)
-    kMeans.save_superimposed_clusters()
+    kMeans.save_centroids()
     print "Accuracy: " + str(kMeans.accuracy)
     print "Confusion Matrix:"
     print kMeans.confusion_matrix
