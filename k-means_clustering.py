@@ -72,11 +72,11 @@ class KMeans:
         distance = sum((element1[:64] - element2[:64]) ** 2)
         return distance
 
-    @staticmethod
-    def update_centroids(cluster_memberships):
+    def update_centroids(self, cluster_memberships):
         new_centroids = []
         for membership in cluster_memberships:
-            new_centroids.append(sum(membership)/len(membership))
+            new_centroid = (sum(membership)/len(membership))[:self.class_index]
+            new_centroids.append(new_centroid)
         return new_centroids
 
     @staticmethod
@@ -233,6 +233,9 @@ class KMeans:
             centroids = self.update_centroids(cluster_memberships)
             recenter_count += 1
 
+        # Todo: remove this debug line
+        #cluster_memberships = self.get_cluster_memberships(self.training_data, centroids)
+
         return self.avg_means_squared_error(centroids, cluster_memberships), centroids, cluster_memberships
 
     def save_centroids(self):
@@ -243,7 +246,7 @@ class KMeans:
         # superimpose the cluster members
         centroid = self.centroids[index]
         centroid.shape = (8, 8)
-        out_file = open("30_centroids/k:" + str(index) + "_label:" + self.labels[index], 'w')
+        out_file = open("centroids/k:" + str(index) + "_label:" + str(self.labels[index]), 'w')
         np.save(out_file, centroid)
         out_file.close
 
@@ -268,7 +271,7 @@ if __name__ == "__main__":
     training_data = read_data("./optdigits/optdigits.train")
     testing_data = read_data("./optdigits/optdigits.test")
 
-    k = 30
+    k = 10
     cluster_attempts = 5
     class_index = 64
     number_of_classes = 10

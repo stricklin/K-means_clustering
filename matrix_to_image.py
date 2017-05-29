@@ -7,5 +7,5 @@ load_directory = "centroids/"
 save_directory = "centroid_images/"
 files = os.listdir(load_directory)
 for file in files:
-    data = np.load(load_directory + file)
+    data = np.load(load_directory + file).astype(np.int64)
     netpbm.imsave(save_directory + file + ".pgm", data)
