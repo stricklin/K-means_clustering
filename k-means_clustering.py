@@ -226,24 +226,29 @@ class KMeans:
         centroids = self.get_centroids()
 
         recenter_count = 0
-        while not self.equal_centroids(old_centroids, centroids):
-            print "recentered " + str(recenter_count) + " times"
-            cluster_memberships = self.get_cluster_memberships(self.training_data, centroids)
-            old_centroids = centroids
-            centroids = self.update_centroids(cluster_memberships)
-            recenter_count += 1
+        #while not self.equal_centroids(old_centroids, centroids):
+            #print "recentered " + str(recenter_count) + " times"
+            #cluster_memberships = self.get_cluster_memberships(self.training_data, centroids)
+            #old_centroids = centroids
+            #centroids = self.update_centroids(cluster_memberships)
+            #recenter_count += 1
+        cluster_memberships = self.get_cluster_memberships(self.training_data, centroids)
 
         return self.avg_means_squared_error(centroids, cluster_memberships), centroids, cluster_memberships
 
     def save_superimposed_clusters(self):
         for cluster_index in range(len(self.testing_clusters)):
-            self.make_image(cluster_index)
+            self.save_superimposed_cluster(cluster_index)
 
     def save_superimposed_cluster(self, index):
+        # superimpose the cluster members
         superimposed_cluster = sum(self.testing_clusters[index])
-        superimposed_cluster.shape((8, 8))
-        out_file = open("superimposed_" + str(index), 'w')
-        out_file.write(superimposed_cluster)
+        # strip off the class information
+        superimposed_cluster = superimposed_cluster[:self.class_index]
+        superimposed_cluster.shape = (8, 8)
+        out_file = open("superimposed_data/superimposed_" + str(index), 'w')
+        #np.savetxt(out_file, superimposed_cluster, delimiter=',')
+        np.save(out_file, superimposed_cluster)
         out_file.close
 
 
@@ -268,7 +273,7 @@ if __name__ == "__main__":
     testing_data = read_data("./optdigits/optdigits.test")
 
     k = 10
-    cluster_attempts = 5
+    cluster_attempts = 1
     class_index = 64
     number_of_classes = 10
 
@@ -276,5 +281,6 @@ if __name__ == "__main__":
     kMeans.save_superimposed_clusters()
     print "Accuracy: " + str(kMeans.accuracy)
     print "Confusion Matrix:"
-    print KMeans.confusion_matrix
+    print kMeans.confusion_matrix
 
+#TODO: put back into dry run testing to spit out image files, get that working before you try the whole thing
