@@ -236,14 +236,14 @@ class KMeans:
         return self.avg_means_squared_error(centroids, cluster_memberships), centroids, cluster_memberships
 
     def save_centroids(self):
-        for cluster_index in range(len(self.k)):
+        for cluster_index in range(self.k):
             self.save_centroid(cluster_index)
 
     def save_centroid(self, index):
         # superimpose the cluster members
-        centroid = self.centroids[k]
+        centroid = self.centroids[index]
         centroid.shape = (8, 8)
-        out_file = open("centroids/k:" + str(index) + "_label:" + self.labels[index], 'w')
+        out_file = open("30_centroids/k:" + str(index) + "_label:" + self.labels[index], 'w')
         np.save(out_file, centroid)
         out_file.close
 
@@ -268,7 +268,7 @@ if __name__ == "__main__":
     training_data = read_data("./optdigits/optdigits.train")
     testing_data = read_data("./optdigits/optdigits.test")
 
-    k = 10
+    k = 30
     cluster_attempts = 5
     class_index = 64
     number_of_classes = 10
@@ -279,4 +279,3 @@ if __name__ == "__main__":
     print "Confusion Matrix:"
     print kMeans.confusion_matrix
 
-#TODO: put back into dry run testing to spit out image files, get that working before you try the whole thing
