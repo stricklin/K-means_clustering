@@ -226,13 +226,12 @@ class KMeans:
         centroids = self.get_centroids()
 
         recenter_count = 0
-        #while not self.equal_centroids(old_centroids, centroids):
-            #print "recentered " + str(recenter_count) + " times"
-            #cluster_memberships = self.get_cluster_memberships(self.training_data, centroids)
-            #old_centroids = centroids
-            #centroids = self.update_centroids(cluster_memberships)
-            #recenter_count += 1
-        cluster_memberships = self.get_cluster_memberships(self.training_data, centroids)
+        while not self.equal_centroids(old_centroids, centroids):
+            print "recentered " + str(recenter_count) + " times"
+            cluster_memberships = self.get_cluster_memberships(self.training_data, centroids)
+            old_centroids = centroids
+            centroids = self.update_centroids(cluster_memberships)
+            recenter_count += 1
 
         return self.avg_means_squared_error(centroids, cluster_memberships), centroids, cluster_memberships
 
@@ -273,7 +272,7 @@ if __name__ == "__main__":
     testing_data = read_data("./optdigits/optdigits.test")
 
     k = 10
-    cluster_attempts = 1
+    cluster_attempts = 5
     class_index = 64
     number_of_classes = 10
 
