@@ -279,6 +279,9 @@ if __name__ == "__main__":
     kMeans = KMeans(training_data, testing_data, class_index, number_of_classes, k, cluster_attempts)
     kMeans.save_centroids()
     print "Accuracy: " + str(kMeans.accuracy)
+    print "MSE: " + str(kMeans.avg_mse)
+    print "MSS: " + str(kMeans.avg_mss)
+    print "entropy: " + str(kMeans.avg_entropy)
     print "Confusion Matrix:"
     print kMeans.confusion_matrix
 
