@@ -182,7 +182,7 @@ class KMeans:
         return max_index[0]
 
     def test(self):
-        confusion_matrix = np.zeros((self.k, self.k))
+        confusion_matrix = np.zeros((self.number_of_classes, self.number_of_classes))
         # Assign all test data to clusters
         self.testing_clusters = self.get_cluster_memberships(self.testing_data, self.centroids)
         # For each cluster
@@ -246,7 +246,7 @@ class KMeans:
         # superimpose the cluster members
         centroid = self.centroids[index]
         centroid.shape = (8, 8)
-        out_file = open("30_centroids/k:" + str(index) + "_label:" + str(self.labels[index]), 'w')
+        out_file = open("centroids/k:" + str(index) + "_label:" + str(self.labels[index]), 'w')
         np.save(out_file, centroid)
         out_file.close
 
@@ -271,7 +271,7 @@ if __name__ == "__main__":
     training_data = read_data("./optdigits/optdigits.train")
     testing_data = read_data("./optdigits/optdigits.test")
 
-    k = 30
+    k = 10
     cluster_attempts = 5
     class_index = 64
     number_of_classes = 10

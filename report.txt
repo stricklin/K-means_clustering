@@ -1,14 +1,224 @@
-experiment 1
-Accuracy: 0.744017807457
+Loading ./optdigits/optdigits.train
+Done
+Loading ./optdigits/optdigits.test
+Done
+clustering attempt: 0
+recentered 0 times
+recentered 1 times
+recentered 2 times
+recentered 3 times
+recentered 4 times
+recentered 5 times
+recentered 6 times
+recentered 7 times
+recentered 8 times
+recentered 9 times
+recentered 10 times
+recentered 11 times
+recentered 12 times
+recentered 13 times
+recentered 14 times
+recentered 15 times
+recentered 16 times
+recentered 17 times
+recentered 18 times
+recentered 19 times
+recentered 20 times
+recentered 21 times
+recentered 22 times
+recentered 23 times
+recentered 24 times
+recentered 25 times
+recentered 26 times
+recentered 27 times
+recentered 28 times
+recentered 29 times
+recentered 30 times
+recentered 31 times
+recentered 32 times
+recentered 33 times
+recentered 34 times
+recentered 35 times
+recentered 36 times
+recentered 37 times
+recentered 38 times
+recentered 39 times
+recentered 40 times
+recentered 41 times
+recentered 42 times
+recentered 43 times
+recentered 44 times
+clustering attempt: 1
+recentered 0 times
+recentered 1 times
+recentered 2 times
+recentered 3 times
+recentered 4 times
+recentered 5 times
+recentered 6 times
+recentered 7 times
+recentered 8 times
+recentered 9 times
+recentered 10 times
+recentered 11 times
+recentered 12 times
+recentered 13 times
+recentered 14 times
+recentered 15 times
+recentered 16 times
+recentered 17 times
+recentered 18 times
+recentered 19 times
+recentered 20 times
+clustering attempt: 2
+recentered 0 times
+recentered 1 times
+recentered 2 times
+recentered 3 times
+recentered 4 times
+recentered 5 times
+recentered 6 times
+recentered 7 times
+recentered 8 times
+recentered 9 times
+recentered 10 times
+recentered 11 times
+recentered 12 times
+recentered 13 times
+recentered 14 times
+recentered 15 times
+recentered 16 times
+recentered 17 times
+recentered 18 times
+recentered 19 times
+recentered 20 times
+recentered 21 times
+recentered 22 times
+recentered 23 times
+recentered 24 times
+recentered 25 times
+recentered 26 times
+recentered 27 times
+recentered 28 times
+recentered 29 times
+recentered 30 times
+recentered 31 times
+recentered 32 times
+recentered 33 times
+recentered 34 times
+recentered 35 times
+recentered 36 times
+recentered 37 times
+recentered 38 times
+recentered 39 times
+recentered 40 times
+recentered 41 times
+recentered 42 times
+recentered 43 times
+recentered 44 times
+recentered 45 times
+recentered 46 times
+recentered 47 times
+recentered 48 times
+recentered 49 times
+recentered 50 times
+recentered 51 times
+recentered 52 times
+recentered 53 times
+recentered 54 times
+recentered 55 times
+recentered 56 times
+recentered 57 times
+recentered 58 times
+recentered 59 times
+recentered 60 times
+recentered 61 times
+recentered 62 times
+recentered 63 times
+recentered 64 times
+recentered 65 times
+recentered 66 times
+recentered 67 times
+recentered 68 times
+recentered 69 times
+recentered 70 times
+recentered 71 times
+recentered 72 times
+recentered 73 times
+recentered 74 times
+recentered 75 times
+recentered 76 times
+recentered 77 times
+recentered 78 times
+recentered 79 times
+recentered 80 times
+recentered 81 times
+recentered 82 times
+recentered 83 times
+recentered 84 times
+recentered 85 times
+recentered 86 times
+recentered 87 times
+recentered 88 times
+recentered 89 times
+recentered 90 times
+recentered 91 times
+recentered 92 times
+clustering attempt: 3
+recentered 0 times
+recentered 1 times
+recentered 2 times
+recentered 3 times
+recentered 4 times
+recentered 5 times
+recentered 6 times
+recentered 7 times
+recentered 8 times
+recentered 9 times
+recentered 10 times
+recentered 11 times
+recentered 12 times
+recentered 13 times
+recentered 14 times
+recentered 15 times
+recentered 16 times
+recentered 17 times
+recentered 18 times
+recentered 19 times
+recentered 20 times
+recentered 21 times
+clustering attempt: 4
+recentered 0 times
+recentered 1 times
+recentered 2 times
+recentered 3 times
+recentered 4 times
+recentered 5 times
+recentered 6 times
+recentered 7 times
+recentered 8 times
+recentered 9 times
+recentered 10 times
+recentered 11 times
+recentered 12 times
+recentered 13 times
+recentered 14 times
+recentered 15 times
+recentered 16 times
+recentered 17 times
+recentered 18 times
+Accuracy: 0.740678909293
+MSE: 636.086334686
+MSS: 2383.76055038
+entropy: 0.996453031898
 Confusion Matrix:
-176.    0.    1.    0.    0.    0.    1.    0.    0.    0.
-  0.   59.    2.    0.    2.    0.    1.    1.    6.   19.
-  0.   21.  148.    0.    0.    0.    0.    0.    1.    0.
-  0.    1.   10.  165.    0.   24.    0.    0.   34.  145.
-  2.    0.    0.    0.  176.    2.    1.   16.    4.    7.
-  0.    0.    0.    1.    0.  155.    0.    0.    3.    5.
-  0.    4.    0.    0.    0.    1.  176.    0.    2.    0.
-  0.    0.    3.    9.    0.    0.    0.  159.    1.    3.
-  0.   97.   13.    8.    3.    0.    2.    3.  123.    1.
-  0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
-
+[[ 176.    0.    1.    0.    0.    0.    0.    0.    1.    0.]
+ [   0.   58.    2.    0.    5.    1.    0.    5.    8.   23.]
+ [   0.   18.  149.    0.    0.    0.    0.    0.    1.    0.]
+ [   0.    1.    9.  165.    0.   26.    0.    0.   34.  145.]
+ [   2.    0.    0.    0.  162.    1.    0.    1.    0.    0.]
+ [   0.    0.    0.    1.    0.  153.    1.    4.    4.    6.]
+ [   0.    8.    0.    0.    0.    1.  179.    0.    2.    0.]
+ [   0.    0.    3.    9.    6.    0.    0.  166.    1.    5.]
+ [   0.   97.   13.    8.    8.    0.    1.    3.  123.    1.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.]]
