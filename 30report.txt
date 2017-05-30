@@ -1,0 +1,291 @@
+Loading ./optdigits/optdigits.train
+Done
+Loading ./optdigits/optdigits.test
+Done
+clustering attempt: 0
+recentered 0 times
+recentered 1 times
+recentered 2 times
+recentered 3 times
+recentered 4 times
+recentered 5 times
+recentered 6 times
+recentered 7 times
+recentered 8 times
+recentered 9 times
+recentered 10 times
+recentered 11 times
+recentered 12 times
+recentered 13 times
+recentered 14 times
+recentered 15 times
+recentered 16 times
+recentered 17 times
+recentered 18 times
+recentered 19 times
+recentered 20 times
+recentered 21 times
+recentered 22 times
+recentered 23 times
+recentered 24 times
+recentered 25 times
+recentered 26 times
+recentered 27 times
+recentered 28 times
+recentered 29 times
+recentered 30 times
+recentered 31 times
+recentered 32 times
+recentered 33 times
+recentered 34 times
+recentered 35 times
+recentered 36 times
+recentered 37 times
+recentered 38 times
+recentered 39 times
+recentered 40 times
+recentered 41 times
+recentered 42 times
+recentered 43 times
+recentered 44 times
+recentered 45 times
+recentered 46 times
+recentered 47 times
+recentered 48 times
+recentered 49 times
+recentered 50 times
+recentered 51 times
+recentered 52 times
+recentered 53 times
+recentered 54 times
+clustering attempt: 1
+recentered 0 times
+recentered 1 times
+recentered 2 times
+recentered 3 times
+recentered 4 times
+recentered 5 times
+recentered 6 times
+recentered 7 times
+recentered 8 times
+recentered 9 times
+recentered 10 times
+recentered 11 times
+recentered 12 times
+recentered 13 times
+recentered 14 times
+recentered 15 times
+recentered 16 times
+recentered 17 times
+recentered 18 times
+recentered 19 times
+clustering attempt: 2
+recentered 0 times
+recentered 1 times
+recentered 2 times
+recentered 3 times
+recentered 4 times
+recentered 5 times
+recentered 6 times
+recentered 7 times
+recentered 8 times
+recentered 9 times
+recentered 10 times
+recentered 11 times
+recentered 12 times
+recentered 13 times
+recentered 14 times
+recentered 15 times
+recentered 16 times
+recentered 17 times
+recentered 18 times
+recentered 19 times
+recentered 20 times
+recentered 21 times
+recentered 22 times
+recentered 23 times
+recentered 24 times
+recentered 25 times
+recentered 26 times
+recentered 27 times
+recentered 28 times
+recentered 29 times
+recentered 30 times
+recentered 31 times
+recentered 32 times
+recentered 33 times
+recentered 34 times
+recentered 35 times
+recentered 36 times
+recentered 37 times
+recentered 38 times
+recentered 39 times
+recentered 40 times
+recentered 41 times
+recentered 42 times
+recentered 43 times
+recentered 44 times
+recentered 45 times
+recentered 46 times
+recentered 47 times
+recentered 48 times
+recentered 49 times
+recentered 50 times
+recentered 51 times
+recentered 52 times
+recentered 53 times
+recentered 54 times
+recentered 55 times
+recentered 56 times
+recentered 57 times
+recentered 58 times
+recentered 59 times
+recentered 60 times
+recentered 61 times
+recentered 62 times
+recentered 63 times
+recentered 64 times
+recentered 65 times
+recentered 66 times
+recentered 67 times
+recentered 68 times
+recentered 69 times
+recentered 70 times
+clustering attempt: 3
+recentered 0 times
+recentered 1 times
+recentered 2 times
+recentered 3 times
+recentered 4 times
+recentered 5 times
+recentered 6 times
+recentered 7 times
+recentered 8 times
+recentered 9 times
+recentered 10 times
+recentered 11 times
+recentered 12 times
+recentered 13 times
+recentered 14 times
+recentered 15 times
+recentered 16 times
+recentered 17 times
+recentered 18 times
+recentered 19 times
+recentered 20 times
+clustering attempt: 4
+recentered 0 times
+recentered 1 times
+recentered 2 times
+recentered 3 times
+recentered 4 times
+recentered 5 times
+recentered 6 times
+recentered 7 times
+recentered 8 times
+recentered 9 times
+recentered 10 times
+recentered 11 times
+recentered 12 times
+recentered 13 times
+recentered 14 times
+recentered 15 times
+recentered 16 times
+recentered 17 times
+recentered 18 times
+recentered 19 times
+recentered 20 times
+recentered 21 times
+recentered 22 times
+Accuracy: 0.917084028937
+Confusion Matrix:
+[[ 177.    0.    0.    0.    0.    0.    2.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.  149.    4.    0.    8.    0.    1.    0.   14.    1.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.   19.  170.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    2.    0.  153.    0.    0.    0.    0.    1.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   1.    0.    0.    0.  169.    1.    0.    2.    0.    7.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    2.    0.  168.    2.    0.    4.    2.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    2.    0.    0.    1.    1.  175.    0.    1.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    2.    4.    0.    0.    0.  170.    1.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    7.    1.    8.    3.    0.    1.    3.  151.    4.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    3.    0.   16.    0.   12.    0.    4.    2.  166.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]
+ [   0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.    0.
+     0.    0.    0.    0.    0.    0.]]
